@@ -1,0 +1,25 @@
+name: Component library
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'lib/component-librart/**'  
+env:
+  NODE_VERSION: '14.x'
+
+jobs:
+  build:
+    name: Build and publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup NodeJs ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Publish storybook
+        run: echo "Publish storybook"
