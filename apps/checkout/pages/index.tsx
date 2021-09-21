@@ -14,7 +14,6 @@ export function Index() {
   return (
     <StyledPage>
       <h2>Resources &amp; Tools</h2>
-      <a href={`${process.env.NEXT_PUBLIC_CHECKOUT_BASE_URL}`}>Go to checkout</a>
       <p>Thank you for using and showing some ♥ for Nx.</p>
       <div className="flex github-star-container">
         <a
