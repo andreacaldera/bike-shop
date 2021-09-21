@@ -2,7 +2,7 @@
 
 ## Component library
 
-[Storybook](https://andreacaldera.github.io/bike-shop/component-library/)
+[Storybook](https://andreacaldera.github.io/bike-shop/storybook/component-library/)
 
 This project was generated using [Nx](https://nx.dev).
 

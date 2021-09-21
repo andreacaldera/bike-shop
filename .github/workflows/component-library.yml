@@ -27,7 +27,7 @@ jobs:
           yarn nx run component-library:build-storybook
           cp -a dist/storybook/ docs
           git config --global user.email "andreacaldera@gmail.com"
-          git config --global user.name "CI"
+          git config --global user.name "ci"
           git add docs
           git commit -m '[ci]: publish storybook to github pages'
           git push

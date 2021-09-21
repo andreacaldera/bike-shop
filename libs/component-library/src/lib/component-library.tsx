@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 const StyledComponentLibrary = styled.div`
-  color: blue;
+  color: green;
 `;
 
 export function ComponentLibrary() {
-  console.log(4);
   return (
     <StyledComponentLibrary>
       <h1>Welcome to ComponentLibrary!</h1>
