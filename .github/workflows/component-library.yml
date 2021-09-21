@@ -22,4 +22,6 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Publish storybook
-        run: echo "Publish storybook"
+        run: |
+          yarn
+          yarn nx run component-library:build-storybook
