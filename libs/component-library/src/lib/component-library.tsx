@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledComponentLibrary = styled.div`
-  color: green;
+  color: yellow;
 `;
 
 export function ComponentLibrary() {
