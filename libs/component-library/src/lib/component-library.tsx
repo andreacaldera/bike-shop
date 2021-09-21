@@ -5,7 +5,7 @@ const StyledComponentLibrary = styled.div`
 `;
 
 export function ComponentLibrary() {
-  console.log(3);
+  console.log(4);
   return (
     <StyledComponentLibrary>
       <h1>Welcome to ComponentLibrary!</h1>
