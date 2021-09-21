@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
-/* eslint-disable-next-line */
-export interface ComponentLibraryProps {}
-
 const StyledComponentLibrary = styled.div`
-  color: pink;
+  color: blue;
 `;
 
-export function ComponentLibrary(props: ComponentLibraryProps) {
+export function ComponentLibrary() {
   return (
     <StyledComponentLibrary>
       <h1>Welcome to ComponentLibrary!</h1>
