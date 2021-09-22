@@ -4,6 +4,8 @@ on:
   push:
     branches-ignore: 
       - main
+    with:
+      fetch-depth: 1
 
 env:
   NODE_VERSION: '14.x'
