@@ -22,4 +22,5 @@ jobs:
 
       - name: Build PR
         run: |
+          yarn
           yarn nx affected:build -- --base=remotes/origin/main
