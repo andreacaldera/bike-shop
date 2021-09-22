@@ -1,0 +1,25 @@
+name: Deploy PR
+
+on:
+  push:
+    branches-ignore: 
+      - main
+
+env:
+  NODE_VERSION: '14.x'
+
+jobs:
+  build:
+    name: Deploy PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup NodeJs ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Build PR
+        run: |
+          yarn nx affected:build -- --base=remotes/origin/main
