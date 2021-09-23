@@ -26,3 +26,4 @@ jobs:
         run: |
           yarn
           yarn nx affected:build -- --base=remotes/origin/main
+          exit 1
