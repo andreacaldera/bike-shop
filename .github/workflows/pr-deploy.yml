@@ -4,6 +4,8 @@ on:
   push:
     branches-ignore: 
       - main
+    with:
+      fetch-depth: 0
 
 env:
   NODE_VERSION: '14.x'
@@ -22,4 +24,6 @@ jobs:
 
       - name: Build PR
         run: |
+          yarn
           yarn nx affected:build -- --base=remotes/origin/main
+          exit 1
